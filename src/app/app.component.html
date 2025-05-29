@@ -35,5 +35,13 @@
                 />
         </li>
     </ul>
-    TASKS OF THAT USER
+
+    <!-- Create a Tasks component that recieves and outputs the name of the selected user -->
+    <!-- Hint to find user w specific id in DUMMY_USERS array: 
+    DUMMY_USERS.find(user => user.id === selectedUserId) -->
+    <!-- Id is found within AppComponent, Tasks should called within AppComponent -->
+    <app-tasks 
+    [name]="selectedUser.name"
+    />
+    <!-- <app-tasks name="" -->
 </main>
